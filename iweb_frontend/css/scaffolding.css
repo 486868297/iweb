@@ -1,0 +1,17 @@
+/* scaffolding.css:项目的基础样式设定 */
+*{
+	box-sizing: border-box;
+}
+body{
+	font-size: 12px;
+	font-family: "arial, helvetica, sans-serif";
+	color: #333;
+	background: #fff;
+}
+a{
+	color: #333;
+	text-decoration: none;
+}
+a:hover,a:active{
+	color: #f60;
+}
