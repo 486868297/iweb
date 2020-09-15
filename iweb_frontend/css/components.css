@@ -1,0 +1,24 @@
+/* 多个界面所通用的举荐必须的样式 */
+.topbar{
+	background: #f9f9f9;
+	border-bottom: 1px solid #eee;
+	line-height: 36px;
+}
+.navbar{
+	background-color:#00be56;
+	border-bottom: 3px solid #b3efc0;
+	height: 52px;
+}
+.carouselbar{
+	border-bottom: 4px solid #ddd;
+}
+.mainbar{
+	border-bottom: 1px soldi #ddd;
+}
+.bottombar{
+	background-color: #eee;
+}
+/* 选择底部条中的容器第一个。row元素 */
+.bottombar>.container>.row:first-child{
+	border-bottom: 1px solid #ddd;
+}
