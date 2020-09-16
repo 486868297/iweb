@@ -1,0 +1,26 @@
+1.面试题：大型界面的css章法？
+2.一个大型页面（例如：京东）css大约1000行，编写时有一定的章法：
+3 Reset：样式重置，把HTML标签的默认样式统一化------可以使用Normalize.css
+4.Scaffolding：样式脚手架，设定全局的基础样式
+5.Layout System:布局系统
+ 
+ 
+ 2.使用浮动布局常见问题
+   若容器中的子元素浮动起来，则不再占用布局空间
+   如果容器内所用的子元素全部浮动，父容器不再用高度。
+   解决方案给父容器添加新的没有浮动的子元素
+   .child{
+	   float:left
+   }
+   .parent:after{
+	   在父容器尾部生成新孩子
+	   content:'';
+	   display:block;
+	   clear:both;/*清除兄弟浮动造成的影响*/
+   }
+fontAwsome的使用步骤
+在css文件中声明两个class：
+//定义一种新的字体
+@font-face{font-family:"FontAwsome" src:url('../fonts/fontawsome.ttf')};
+//使用刚刚定义的新字体
+.fa{font-family:'FontAwsome'};
