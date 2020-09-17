@@ -1,0 +1,142 @@
+/* 多个界面所通用的举荐必须的样式 */
+.topbar{
+	background: #f9f9f9;
+	border-bottom: 1px solid #eee;
+	line-height: 36px;
+}
+/* 导航条 */
+.navbar{
+	background-color:#00be56;
+	border-bottom: 3px solid #b3efc0;
+	height: 42px;
+	font-size: 1.2em;
+}
+.topbar-item{
+	padding: 0 0.5em;
+}
+.topbar-item:last-child{
+	padding-right: 0;
+}
+.menu:after{
+	background: #00a43d;
+}
+.menu>li{
+	float: left;
+	line-height: 38px;
+	padding: 0 1.5em;
+}
+.menu>li>a{
+	color: white;
+}
+.menu>li:hover{
+	background: #00b149;
+}
+.menu>li.active{
+	background: #00a43d;
+}
+/* 2.LOGO+搜索条 */
+.logo{
+	margin: 1.5em 0;
+}
+.searchbar{
+	position: relative;
+}
+/* 搜索框 */
+.search{
+	/* 保证元素在父容器中竖直居中 调整上间距 */
+	/* margin-top: 6px; */
+	/* 保证元素在父容器中竖直居中：先向下移到父容器中线以下，太上微调自身高度的一半 */
+	top:50%;
+	right: 620px;
+	position: absolute;
+	margin-top: -16px;
+}
+.search-input{
+	width: 360px;
+	height: 32px;
+	line-height: 32px;
+	padding: 0 0.6em;
+	font-size: 1.15em;
+	border: 1xp solid #EEEEEE;
+}
+.search-button{
+	width: 50px;
+	height: 32px;
+	background-color:#00be56;
+	color: white;
+	border: none;
+	font-size: 1.7em;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+/* 登录注册 */
+.user-center{
+	background: #55c760;
+	line-height: 38px;
+}
+.user-center a,
+.user-center span{
+	color: #FFFFFF;
+}
+.user-center a:hover{
+	color:#ffff9b;
+}
+/* 我的购物车 */
+.my-cart{
+	position: absolute;
+	right: 500px;
+	top: 50%;
+	height: 32px;
+	margin-top: -16px;
+	border:1px solid #DDDDDD;
+	background: #F9F9F9;
+	line-height: 1.875rem;
+	padding: 0 0.5em;
+}
+/* 轮播广告 */
+.carouselbar{
+	border-bottom: 4px solid #ddd;
+}
+.carousel{
+	position: relative;/*为绝对定位提供参照*/
+}
+.carousel .items a{
+	display: block;/*改为块级元素*/
+	width: 100%;
+	height: 380px;
+	background-position: center;/*背景图的位置*/
+	background-repeat: no-repeat;
+}
+.carousel .items li:not(.active){/*不带.active的li隐藏*/
+	display: none;
+}
+.carousel .indicators{
+	position: absolute;
+     bottom: 20px;
+	 left:50%;
+	 margin-left: -72px;
+}
+.carousel .indicators li{
+	width: 18px;
+	height: 18px;
+	background: #ccc;
+	border-radius: 50%;
+	float: left;
+	margin: 0  9px;
+	cursor: pointer;
+}
+.carousel .indicators li.active{
+	background: #ff9300;
+}
+
+.mainbar{
+	border-bottom: 1px solid #ddd;
+}
+.bottombar{
+	background-color: #eee;
+}
+/* 选择底部条中的容器第一个。row元素 */
+.bottombar>.container>.row:first-child{
+	border-bottom: 1px solid #ddd;
+}
