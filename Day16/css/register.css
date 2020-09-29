@@ -1,0 +1,73 @@
+.mainbar{
+	background-color: #FCFCFC;
+}
+.mainbar:before,
+.mainbar:after{
+	content:'';
+	display: table;
+}
+.mainbar .container{
+	background: #fff;
+	margin: 3em auto 3.5em;
+	border: 1px solid #e6e6e6;
+	/*外阴影:水平偏移 竖直 阴影*/
+	box-shadow:0 0 10px #fff ;
+	border-radius: 2px;
+	padding: 1em 7em 2em;
+}
+.form header{
+	font-size: 1.4em;
+	color: #ff9300;
+	line-height: 4em;
+	border-bottom: 1px solid #ddd;
+	text-align: center;
+}
+.form .row{
+	line-height: 2.5em;
+	padding: .6em 0;
+}
+.form lable{
+	text-align: right;
+	display: block;
+}
+.form input{
+	width: 100%;
+	padding: 1em 1em;
+	border: 1px solid #CCCCCC;
+	border-radius:3px;
+	vertical-align: middle;
+}
+.form span.error{
+	color:#f00;
+}
+.form span.succ{
+	color: #00c160;
+}
+.form .captcha{
+	height: 34px;
+	vertical-align: middle;/*这样可以让图片与文字竖直对齐*/
+}
+.form .refresh{
+	font-size: 2em;
+	color: #00BE56;
+	cursor: pointer;
+}
+
+.button-szh{
+	background: #00BE56;
+	border: none;
+	padding: 1em 1em;
+	color: #fff;
+	font-size: 1.2em;
+}
+@media screen and (max-width:767px){
+	.mainbar .container{
+		padding: 0em 1em 1em;
+	}
+	.form .row{
+		line-height: 2em;
+	}
+	.form lable{
+		text-align:left;
+	}
+}
